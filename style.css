@@ -3,4 +3,8 @@ h1{
     font-size: 30px;
     
 }
-body{ background-color: rgb(186, 186, 36);}
+
+button{ 
+    width: 100px;
+    height: 50px;
+}
