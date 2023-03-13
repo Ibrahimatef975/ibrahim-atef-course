@@ -53,7 +53,7 @@ document.getElementById("show").onclick  = function osama() {
 }
 setTimeout(function() {
     console.log("good") ;
-}, 20);
+}, 0.2);
 
 let print= function print() {
     return 10;
@@ -80,4 +80,39 @@ function showtext() {
 
 showtext();
 
+
+// nested fnction
+let z = 10;
+
+function parent() {
+    let z= 50
+    let f=10 ;
+    function child() {
+        function grand() {
+            console.log(z)
+        }
+        grand();
+        console.log(f +z);
+    }
+    child();
+}
+parent();
     
+// object
+
+let user = {
+    nam: "ibrahim",
+    age: 23,
+   
+    sayhello: function () {
+        return'hello';
+    },
+    
+}
+console.log(user.nam );
+console.log(user.age );
+console.log(user.sayhello());
+
+// dot notation رمز
+
+
