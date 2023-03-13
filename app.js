@@ -54,3 +54,30 @@ document.getElementById("show").onclick  = function osama() {
 setTimeout(function() {
     console.log("good") ;
 }, 20);
+
+let print= function print() {
+    return 10;
+
+}
+console.log(print());
+
+let prin = (numbe1,numbe2 )=> numbe1+numbe2;
+
+console.log(prin(100, 50));
+
+let y = _ => 1;
+console.log(y());
+// scope ...global scope
+var a = 1;
+var b = 2;
+function showtext() {
+    var a = 10;
+    var b = 20;
+    console.log(`function global ${a}`)
+     
+    console.log(`function global ${ b}`)
+}
+
+showtext();
+
+    
