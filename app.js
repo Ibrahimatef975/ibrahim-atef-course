@@ -51,3 +51,6 @@ document.getElementById("show").onclick  = function osama() {
     console.log("show");
 
 }
+setTimeout(function() {
+    console.log("good") ;
+}, 20);
