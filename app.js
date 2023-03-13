@@ -103,6 +103,8 @@ parent();
 let user = {
     nam: "ibrahim",
     age: 23,
+    skils: ["html", "css", "js"],
+    
    
     sayhello: function () {
         return'hello';
@@ -112,7 +114,25 @@ let user = {
 console.log(user.nam );
 console.log(user.age );
 console.log(user.sayhello());
+console.log(user.skils);
 
-// dot notation رمز
+// dot notation
+// nested object
+
+let use = new Object({
+    omr: 23,
+    
+});
+console.log(use);
+
+// object with new key word
+
+
+
+
+    
+
+
+
 
 
