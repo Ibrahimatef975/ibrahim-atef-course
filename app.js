@@ -115,6 +115,16 @@ console.log(user.nam );
 console.log(user.age );
 console.log(user.sayhello());
 console.log(user.skils);
+let car = {
+    price: 500000,
+    model: 2022,
+    color:"white",
+}
+console.log(car.color);
+console.log(car.model);
+console.log(car.price);
+
+
 
 // dot notation
 // nested object
@@ -122,10 +132,33 @@ console.log(user.skils);
 let use = new Object({
     omr: 23,
     
+    
+    
 });
-console.log(use);
+
+let phone=  {
+    id: "01589",
+    
+    addr: {
+        egy: "alex",
+        usa: "washonton",
+        china:"unb"
+    }
+        
+} 
+console.log(phone.id);
+console.log(phone.addr.egy)
 
 // object with new key word
+ 
+for ( var k=0;k<5;k++)
+{
+    console.log(k);
+}
+for ( let k=0;k<5;k++)
+{
+    console.log(k);
+}
 
 
 
