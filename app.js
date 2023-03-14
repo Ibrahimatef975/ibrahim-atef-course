@@ -148,8 +148,22 @@ let phone=  {
 } 
 console.log(phone.id);
 console.log(phone.addr.egy)
+let person = {
+    nameperson:"peter"
+}
+console.log(person.nameperson);
+nameperson = "michel"
+console.log(nameperson);
+
+// this keyword
+
+let l = this;
+console.log(l);
+
 
 // object with new key word
+// this.alert(" hi my baby");
+"use strict"; 
  
 for ( var k=0;k<5;k++)
 {
