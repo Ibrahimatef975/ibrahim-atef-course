@@ -164,7 +164,15 @@ console.log(l);
 // object with new key word
 // this.alert(" hi my baby");
 "use strict"; 
- 
+let personew = {
+    nameofper: "bert",
+    
+    get() {
+        return this.nameofper
+    }
+
+}
+ console.log(personew.get())
 for ( var k=0;k<5;k++)
 {
     console.log(k);
@@ -175,9 +183,35 @@ for ( let k=0;k<5;k++)
 }
 
 
+// assign object
 
+let a1 = {
+    nm1:1
+}
+let a2 = {
+    nm2:2
+}
+let a3 = {
+    nm3:3
+}
+let a4 = Object.assign(a1, a2, a3);
+a4.r=100; 
+console.log(a4);
 
+let head = document.getElementsByClassName('head')[1]; 
+head.style.color='red'
+console.log(head);
     
+// DOM 
+Document
+
+let myqueryElment = document.querySelector(" .special");
+console.log(myqueryElment);
+    
+console.log(document.body);
+console.log(document.title);
+
+
 
 
 
