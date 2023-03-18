@@ -195,21 +195,68 @@ let a3 = {
     nm3:3
 }
 let a4 = Object.assign(a1, a2, a3);
-a4.r=100; 
+a4.r = 100; 
+a4.nm1=112;  
 console.log(a4);
+
+// DOM 
+Document 
 
 let head = document.getElementsByClassName('head')[1]; 
 head.style.color='red'
 console.log(head);
-    
-// DOM 
-Document
+
+let hea = document.getElementsByTagName('h1')[2];
+// let hea = document.queryselctor('h1')[2];
+// queryselctor
+hea.style.color = 'blue';
+
+let q = document.querySelector('.query');
+// class start with dot
+q.style.color = 'red';
+
+// id start with #
+
+let body = document.body;
+// body.style.background = '#489'
+
+
+     
+
 
 let myqueryElment = document.querySelector(" .special");
 console.log(myqueryElment);
     
 console.log(document.body);
-console.log(document.title);
+; 
+
+// atribute
+ let im=document.getElementById('img');
+
+console.log(im);
+console.log(im.hasAttributes());
+
+console.log(im.attributes[0]);
+im.setAttribute('alt','ahmed')
+img.removeAttribute('alt')
+img.removeAttribute('img')
+img.removeAttribute('id')
+
+let contain = document.getElementById('container');
+// container.outerHTML = '<P> test</P>';
+
+container.innerText = '<P> test</P>'; 
+container.style.backgroundColor = '#444'
+container.style.borderLeft = '20px solid yellow'
+// write to words use camal case such as borderLeft or backgroundColor
+// container is id
+container.style.color = '#fff'
+container.style.padding = '10px';
+
+// container.style.removeProperty('border')
+// container.style.removeProperty('background')
+// container.style.setProperty('color','red')
+
 
 
 
