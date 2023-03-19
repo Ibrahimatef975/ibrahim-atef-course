@@ -238,9 +238,9 @@ console.log(im.hasAttributes());
 
 console.log(im.attributes[0]);
 im.setAttribute('alt','ahmed')
-img.removeAttribute('alt')
-img.removeAttribute('img')
-img.removeAttribute('id')
+// img.removeAttribute('alt')
+// img.removeAttribute('img')
+// img.removeAttribute('id')
 
 let contain = document.getElementById('container');
 // container.outerHTML = '<P> test</P>';
@@ -257,10 +257,95 @@ container.style.padding = '10px';
 // container.style.removeProperty('background')
 // container.style.setProperty('color','red')
 
+// 1 creat elment
+
+// var containerm = document.createElement('div');
+
+// var headm = document.createElement('h5');
+
+// var img = document.createElement('img');
+// // 2- adding element
+// let content = document.createTextNode('ibrahim atef');
+// headm.appendChild(content);
+
+// img.src = 'img/ibrahim.jpg';
+
+// img.style.width='200px'
+
+// // 3 - adding element in wanted place 
+// containerm.appendChild(headm);
+// containerm.appendChild(img);
 
 
 
+// document.body.appendChild(containerm)
+
+// containerm.style.background = '#555';
+// containerm.style.color = '#fff';
+
+// containerm.style.padding = '10px'
+// containerm.style.fontSize = '20px'
+// containerm.style.height = '400px'
+// containerm.style.width= '300px'
+
+let containe= document.createElement( 'DIV');
+document.body.appendChild( containe);
+containe.style.textAlign = 'center';
+function element() {
+    let card = document.createElement('divm');
+let titlecard=document.createElement('h4');
+    var age = document.createElement('p');
+    var img = document.createElement('img');
+    let he = document.createTextNode('ibrahim atef');
+    let agecard = document.createTextNode('25');
+    img.src = 'img/ibrahim.jpg';
+    img.style.width='100%'
+    titlecard.appendChild(he);
+    age.appendChild(agecard);
+    
+    card.appendChild(titlecard);
+    card.appendChild(age);
+    card.appendChild(img);
+    containe.appendChild(card)
+
+}
 
 
+let nam=['ahmed', 'ali', 'sobhy', 'magdy', 'adel'];
+
+containe.style.width = '200px';
+containe.style.backgroundColor='#444'
+containe.style.color = '#fff';
+containe.style.padding = '10px';
+containe.style.padding = '10px';
+containe.style.margin = '30px';
+containe.style.display = 'inline-block';
+
+for (let i = 0; i < 4; i++)
+{
+    element ();
+
+}
+// let btn = document.getElementById('btn');
 
 
+btn.addEventListener('click', function () {
+    btn.style.background = 'orange';
+    btn.style.color = 'white';
+    document.body.style.background = 'black';
+    
+     document.body.style.color= 'white'
+    
+})
+
+show.onmousedown = function () {
+    console.log('clicked');
+}
+// btn.addEventListener('click', function () {
+   
+    
+// })
+light.addEventListener('click', function () {
+    document.body.style.background = 'white';
+     document.body.style.color= 'black'
+})
