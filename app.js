@@ -349,3 +349,13 @@ light.addEventListener('click', function () {
     document.body.style.background = 'white';
      document.body.style.color= 'black'
 })
+
+// let dollar=document. getElementById('dollar');
+
+// let pound= document. getElementById('pound');
+dollar.onkeyup = function () {
+      pound.value = dollar.value *30  ;
+} 
+pound.onkeyup = function () {
+    dollar.value = pound.value /30  ;
+} 
